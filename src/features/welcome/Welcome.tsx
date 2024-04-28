@@ -1,6 +1,6 @@
 import { MainButton, useThemeParams } from "@vkruglikov/react-telegram-web-app";
-import { CardHeader, CardContent, CardFooter, Card, Cards } from "./Card";
-import Button from "./Button";
+import { CardHeader, CardContent, Card, Cards } from "./Card";
+// import Button from "./Button";
 import { useState } from "react";
 
 export default function Component() {
