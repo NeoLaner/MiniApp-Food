@@ -18,46 +18,27 @@ export const Cards: React.FC<BasicProps> = ({
   );
 };
 
-interface CardProps {
-  index: number;
-  currentSlide: number;
-  headingText: string;
-  text: string;
-  image: string;
-}
-
-export const Card: React.FC<CardProps> = ({
-  index,
-  currentSlide,
-  headingText,
-  text,
-  image,
-}) => {
-  const style = {
-    transform: `translateX(${-(currentSlide - index) * 100}%)`,
-  };
+export const Card: React.FC = () => {
   return (
-    <div
-      style={style}
-      className={`w-72 h-96 transition-all  ${
-        index !== currentSlide ? "absolute" : ""
-      }`}
-    >
+    <div className="w-72 h-96 ">
       <CardHeader className="relative overflow-hidden rounded-t-lg flex items-center justify-center h-52">
         <img
           alt="Welcome"
           className="w-48"
           height="200"
-          src={image}
+          src="coock.webp"
           width="400"
         />
       </CardHeader>
       <CardContent className="space-y-4 p-6 text-center">
         <div className="space-y-2">
           <h2 className="text-2xl font-bold tracking-tighter text-[var(--tg-theme-text-color)]">
-            {headingText}
+            Welcome
           </h2>
-          <p className="text-[var(--tg-theme-text-color)] ">{text}</p>
+          <p className="text-[var(--tg-theme-text-color)] ">
+            🛵💨 Your Next Pizza is Just a Click Away - And Delivery is On Us!
+            🏡🍕
+          </p>
         </div>
       </CardContent>
     </div>
