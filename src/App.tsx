@@ -1,13 +1,13 @@
 import "./App.css";
 import {
   WebAppProvider,
-  MainButton,
-  useShowPopup,
   useThemeParams,
 } from "@vkruglikov/react-telegram-web-app";
 
 function App() {
   const [colorScheme, themeParams] = useThemeParams();
+  console.log(colorScheme);
+  console.log(themeParams);
 
   return (
     <WebAppProvider>
