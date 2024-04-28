@@ -11,7 +11,7 @@ export default function Component() {
 
   return (
     <main
-      className={`flex h-[100dvh] items-center justify-center bg-[${themeParams.bg_color}]`}
+      className={`flex h-[100dvh] items-center justify-center bg-[var(--tg-theme-bg-color)]`}
     >
       <Cards className="flex overflow-hidden relative">
         <Card
@@ -30,10 +30,10 @@ export default function Component() {
           </CardHeader>
           <CardContent className="space-y-4 p-6 text-center">
             <div className="space-y-2">
-              <h2 className="text-2xl font-bold tracking-tighter">
+              <h2 className="text-2xl font-bold tracking-tighter text-[var(--tg-theme-header-bg-color)]">
                 Welcome to our App
               </h2>
-              <p className="text-gray-200 ">
+              <p className="text-[var(--tg-theme-text-color)] ">
                 Get started by exploring our features and discovering how our
                 app can help you achieve your goals.
               </p>
