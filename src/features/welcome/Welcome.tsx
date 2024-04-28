@@ -11,11 +11,11 @@ export default function Component() {
 
   return (
     <main
-      className={`flex h-[100dvh] items-center justify-center bg-[{themeParams.bg_color}]`}
+      className={`flex h-[100dvh] items-center justify-center bg-[${themeParams.bg_color}]`}
     >
       <Cards className="flex overflow-hidden relative">
         <Card
-          className={`w-full max-w-md bg-red-500  transition-all  ${
+          className={`w-full max-w-md   transition-all  ${
             currentSlide > 0 ? "-translate-x-full" : ""
           } `}
         >
@@ -33,7 +33,7 @@ export default function Component() {
               <h2 className="text-2xl font-bold tracking-tighter">
                 Welcome to our App
               </h2>
-              <p className="text-gray-500 dark:text-gray-400">
+              <p className="text-gray-200 ">
                 Get started by exploring our features and discovering how our
                 app can help you achieve your goals.
               </p>
@@ -50,7 +50,7 @@ export default function Component() {
         </Card>
 
         <Card
-          className={`w-full max-w-md bg-red-500  transition-all absolute ${
+          className={`w-full max-w-md transition-all absolute ${
             currentSlide > 0 ? "" : "translate-x-full"
           } `}
         >
