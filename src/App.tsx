@@ -1,8 +1,8 @@
-import "./App.css";
 import {
   WebAppProvider,
   useThemeParams,
 } from "@vkruglikov/react-telegram-web-app";
+import Welcome from "./features/welcome/Welcome";
 
 function App() {
   const [colorScheme, themeParams] = useThemeParams();
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <WebAppProvider>
-      <div className="bg-black">dasddsadasas</div>;
+      <Welcome />
     </WebAppProvider>
   );
 }
