@@ -30,7 +30,7 @@ export default function Component() {
           </CardHeader>
           <CardContent className="space-y-4 p-6 text-center">
             <div className="space-y-2">
-              <h2 className="text-2xl font-bold tracking-tighter text-[var(--tg-theme-header-bg-color)]">
+              <h2 className="text-2xl font-bold tracking-tighter text-[var(--tg-theme-text-color)]">
                 Welcome to our App
               </h2>
               <p className="text-[var(--tg-theme-text-color)] ">
