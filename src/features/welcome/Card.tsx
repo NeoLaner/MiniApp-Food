@@ -39,11 +39,11 @@ export const Card: React.FC<CardProps> = ({
   return (
     <div
       style={style}
-      className={`w-full max-w-md transition-all ${
+      className={`w-72 h-96 transition-all  ${
         index !== currentSlide ? "absolute" : ""
       }`}
     >
-      <CardHeader className="relative overflow-hidden rounded-t-lg flex items-center justify-center ">
+      <CardHeader className="relative overflow-hidden rounded-t-lg flex items-center justify-center h-52">
         <img
           alt="Welcome"
           className="w-48"
