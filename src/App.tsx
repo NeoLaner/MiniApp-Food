@@ -1,14 +1,7 @@
-import {
-  WebAppProvider,
-  useThemeParams,
-} from "@vkruglikov/react-telegram-web-app";
+import { WebAppProvider } from "@vkruglikov/react-telegram-web-app";
 import Welcome from "./features/welcome/Welcome";
 
 function App() {
-  const [colorScheme, themeParams] = useThemeParams();
-  console.log(colorScheme);
-  console.log(themeParams);
-
   return (
     <WebAppProvider>
       <Welcome />

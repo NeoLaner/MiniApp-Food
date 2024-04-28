@@ -1,11 +1,18 @@
+import { useThemeParams } from "@vkruglikov/react-telegram-web-app";
 import { CardHeader, CardContent, CardFooter, Card, Cards } from "./Card";
 import Button from "./Button";
 import { useState } from "react";
 
 export default function Component() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [colorScheme, themeParams] = useThemeParams();
+  console.log(colorScheme);
+  console.log(themeParams.bg_color);
+
   return (
-    <main className="flex h-[100dvh] items-center justify-center bg-gray-100 dark:bg-gray-950">
+    <main
+      className={`flex h-[100dvh] items-center justify-center bg-[{themeParams.bg_color}]`}
+    >
       <Cards className="flex overflow-hidden relative">
         <Card
           className={`w-full max-w-md bg-red-500  transition-all  ${
