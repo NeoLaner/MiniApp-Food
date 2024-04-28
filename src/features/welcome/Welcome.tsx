@@ -74,7 +74,7 @@ export default function Component() {
               </p>
             </div>
           </CardContent>
-          <CardFooter className="pt-4">
+          <CardFooter className="pt-4 hidden">
             <MainButton text="Get Started" onClick={() => setCurrentSlide(1)} />
             {/* <Button
               onClick={() => setCurrentSlide(1)}
